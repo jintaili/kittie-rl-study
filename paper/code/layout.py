@@ -11,7 +11,16 @@ def page(title: str, body: str) -> str:
     nav = ''.join(f'<a href="{SITE}{path}">{label}</a>' for path, label in [
         ('index.html', 'Overview'), ('courtyard.html', 'Courtyard'),
         ('head-goon.html', 'Head Goon'), ('training/', 'Training'), ('methods.html', 'Methods')])
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · Kittie Has Other Plans</title><link rel="stylesheet" href="assets/site.css"></head><body><main class="article"><header><a href="{SITE}">Kittie Has Other Plans</a><nav class="site-nav" aria-label="Main navigation">{nav}</nav></header>{body}<footer><span>Jintai Li · 2026</span><span><a href="methods.html">Methods and code</a> · <a href="methods.html#licenses">Licenses</a></span></footer></main></body></html>'''
+    description = "Fine-tuning a 0.8B language model with behavior cloning and PPO for real-time Game Boy gameplay, with results, limitations and reference code."
+    route = {'Teaching a small language model to play': '', 'Methods and code': 'methods.html'}.get(title, 'supplement.html')
+    metadata = (f'<meta name="description" content="{description}">'
+                f'<meta property="og:title" content="{html.escape(title, quote=True)}">'
+                f'<meta property="og:description" content="{description}">'
+                '<meta property="og:type" content="article">'
+                f'<meta property="og:url" content="{SITE}training/{route}">'
+                f'<meta property="og:image" content="{SITE}training/images/game-frame.png">'
+                '<meta property="og:image:alt" content="Kittie facing Head Goon in the Game Boy game">')
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{metadata}<title>{html.escape(title)} · Kittie Has Other Plans</title><link rel="stylesheet" href="assets/site.css"></head><body><main class="article"><header><a href="{SITE}">Kittie Has Other Plans</a><nav class="site-nav" aria-label="Main navigation">{nav}</nav></header>{body}<footer><span>Jintai Li · 2026</span><span><a href="methods.html">Methods and code</a> · <a href="methods.html#licenses">Licenses</a></span></footer></main></body></html>'''
 
 def materialize_reference() -> None:
     """Generated for browsing/export; editable implementations stay under src/."""

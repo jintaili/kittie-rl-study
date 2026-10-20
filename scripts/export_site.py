@@ -38,7 +38,11 @@ def export(site: Path, video: Path | None = None) -> dict:
         dest.parent.mkdir(parents=True, exist_ok=True)
         data = source.read_bytes()
         if name.endswith('.html'):
-            text = data.decode().replace(PUBLIC + 'training/', './').replace(PUBLIC, '../')
+            text = data.decode()
+            # Keep absolute social-preview URLs; localize only navigable asset links.
+            for attr in ('href', 'src', 'poster'):
+                text = text.replace(f'{attr}="{PUBLIC}training/', f'{attr}="./')
+                text = text.replace(f'{attr}="{PUBLIC}', f'{attr}="../')
             text = text.replace('</head>', '<script defer src="../analytics.js"></script></head>')
             data = text.encode()
         if b'ts.net' in data or b'tailscale' in data.lower():

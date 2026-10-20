@@ -5,13 +5,13 @@ Reference implementation and analysis companion for Jintai Li's Head Goon study 
 through behavior cloning, then trains on its own episodes with PPO.
 
 The original encounter results are 0/50 for pretrained Qwen, 39/50 for BC04 and
-47/50 for PPO15. The [article](paper/index.html) and [supplement](paper/supplement.html)
+47/50 for PPO15. The [article](https://jintaili.github.io/kittie-game/training/) and [supplement](https://jintaili.github.io/kittie-game/training/supplement.html)
 retain the randomized results and the limits of one training lineage, retrospective
 checkpoint selection and differing serving conditions.
 
 ## Read the implementation
 
-The [methods and code guide](paper/methods.html) connects the calculations to the
+The [methods and code guide](https://jintaili.github.io/kittie-game/training/methods.html) connects the calculations to the
 experiment. `src/head_goon_study/` contains observation construction and button
 mapping, action scoring, BC, PPO, advantages, critic fitting and rewards.
 `configs/` records training settings. `provenance/source-map.json` traces each
