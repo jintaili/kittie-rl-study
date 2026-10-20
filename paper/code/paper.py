@@ -27,7 +27,7 @@ body='''<p class="status">Technical article · 19 October 2026 · <a href="#meth
 <h2 id="results">The trained encounter: 78% to 94%</h2>
 
 <p>These evaluations use the original encounter: the same saved starting state and boss schedule used for PPO training. Each policy plays 50 games. Qwen chooses its highest-probability action at each decision.</p>
-'''+results('main',['JEV','BC04','PPO15'])+'''
+'''+results('main',(['Vanilla Qwen'] if 'main|Vanilla Qwen|6' in a['cohorts'] else [])+['JEV','BC04','PPO15'])+'''
 <p class="note">Latency is the mean of episode-median observation-to-action times, excluding the post-action interval. This statistic is used consistently in both main tables.</p>
 <p>PPO15 won 47/50 games, compared with 39/50 for BC04 and 26/50 for JEV. Relative to BC04, the observed improvement is 16 percentage points, with nominal 95% interval 2.2 to 29.8 points and Fisher p = 0.0407. Relative to JEV, it is 42 points, with interval 25.3 to 56.1 points and p = 2.65 × 10<sup>−6</sup>. PPO15 performs better in these recorded evaluations. Differences in serving conditions and action selection limit what I can attribute to training alone.</p>
 
@@ -78,6 +78,16 @@ body='''<p class="status">Technical article · 19 October 2026 · <a href="#meth
 <h2 id="code">Code and reproduction</h2>
 <p>The companion code centers on the training sequence, behavior cloning followed by PPO. The <a href="reproduction.html">reproduction guide</a> describes the extracted training code and the remaining work to connect model loading, game assets and native evaluation. The package also regenerates statistics and figures from 510 exported evaluation records, with scenario and delay schedules supplied as inputs. Full standalone training and evaluation packaging remains incomplete. The <a href="supplement.html#evidence">supplement links all detailed reports</a>.</p>
 '''
+baseline=a['cohorts'].get('main|Vanilla Qwen|6')
+if baseline:
+ baseline_note=f"<p>The untouched Qwen model won {baseline['wins']}/{baseline['n']} games before any gameplay fine-tuning. I used the same textual observations and greedy action-scoring interface as BC04 and PPO15, with no adapter or prompt search. This measures the pretrained model under that interface, not its best achievable gameplay with different prompting. <a href='https://jintais-macbook-air.tail6a9202.ts.net/kittie-rl/head-goon-qwen-base-001-results.html'>Full vanilla-Qwen results</a>.</p>"
+ body=body.replace('It won 39 of 50 games after learning from demonstrations and 47 of 50 after reinforcement learning.',f"The untouched model won {baseline['wins']} of {baseline['n']} games under the evaluation interface. After learning from demonstrations it won 39 of 50, and after reinforcement learning it won 47 of 50.")
+ body=body.replace('All three policies are evaluated on the original encounter and the same randomized scenario set.','Vanilla Qwen is evaluated on the original encounter only. JEV, BC04 and PPO15 are also evaluated on the same randomized scenario set.')
+ body=body.replace('510 exported evaluation records','560 exported evaluation records')
+ body=body.replace('Win rates and nominal 95 percent intervals for JEV, BC04 and PPO15 in original and randomized encounters','Win rates and nominal 95 percent intervals, including vanilla Qwen on the original encounter')
+else:
+ baseline_note='<p class="status">Vanilla-Qwen baseline, provisional: the latest confirmed result is 0/49, with the final game and audit pending. The working expectation is 0/50. This assumption is not included in the statistical tables or figures. The baseline uses the same observations and greedy action-scoring interface as BC04 and PPO15, without an adapter or prompt search.</p>'
+body=body.replace('<p class="note">Latency is the mean',baseline_note+'\n<p class="note">Latency is the mean',1)
 (HOME/'index.html').write_text(page('Teaching a small language model to play',body))
 # Supplement retains methodological details and exploratory results outside the main narrative.
 sup='''<p class="status"><a href="index.html">Return to the article</a> · <a href="reproduction.html">Reproduction package</a></p><h1>Supplementary methods and analyses</h1>
