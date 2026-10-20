@@ -1,5 +1,5 @@
 {
-  "status": "private repository created; training update components extracted and CPU-tested; end-to-end model/assets/native integration pending",
+  "status": "Reference implementation and analysis companion; includes extracted training components and recorded evaluation data.",
   "model": "Qwen/Qwen3.5-0.8B",
   "revision": "2fc06364715b967f1860aea9cf38778875588b17",
   "headline_checkpoint": "PPO15",

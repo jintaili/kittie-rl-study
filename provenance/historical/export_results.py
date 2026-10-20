@@ -1,8 +1,10 @@
 """Export only the completed cohorts discussed in the paper; never run inference."""
-import hashlib,json
+import argparse,hashlib,json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[3]
-DEST=Path(__file__).resolve().parents[1]/'data'
+parser=argparse.ArgumentParser(description='Provenance-only re-export from the original experiment archive.')
+parser.add_argument('--archive', type=Path, required=True)
+ROOT=parser.parse_args().archive.resolve()
+DEST=Path(__file__).resolve().parents[2]/'paper/data'
 SOURCES=[
  ('main','Pretrained Qwen',6,'training_runs/head-goon-qwen-base-001-execution/results/games.json',{}),
  ('main','JEV',6,'data/jev-head-goon-baseline-001/results.json',{}),

@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
+matplotlib.rcParams['svg.hashsalt'] = 'head-goon-study'
 import matplotlib.pyplot as plt
 HOME=Path(__file__).resolve().parents[1]
 analysis=json.loads((HOME/'data/analysis.json').read_text())
@@ -19,4 +20,8 @@ for ax,env,title in zip(axes,['main','randomized'],['Original fixed entry','Rand
   ax.errorbar(x,rate,yerr=[[max(0,rate-lo)],[max(0,hi-rate)]],fmt='o',capsize=5,color=color)
   ax.annotate(f"{m['wins']}/{m['n']}",(x,hi),xytext=(0,8),textcoords='offset points',ha='center',fontsize=9)
  ax.set(xticks=range(len(models)),xticklabels=[m.replace('Pretrained Qwen','Pretrained\nQwen') for m in models],ylim=(0,1.13),title=title,ylabel='Win fraction',xlim=(-.5,len(models)-.5));ax.grid(axis='y',alpha=.15)
-fig.tight_layout();fig.savefig(HOME/'performance.png',dpi=180);fig.savefig(HOME/'performance.svg');plt.close(fig)
+fig.tight_layout();fig.savefig(HOME/'performance.png',dpi=180);fig.savefig(HOME/'performance.svg', metadata={'Date': None});plt.close(fig)
+
+# Keep generated SVG diffs stable and whitespace-clean.
+p = HOME / 'performance.svg'
+p.write_text('\n'.join(line.rstrip() for line in p.read_text().splitlines()) + '\n')

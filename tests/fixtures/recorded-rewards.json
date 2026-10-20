@@ -1,0 +1,167 @@
+{
+  "source": "training_runs/head-goon-ppo15-modes-001-execution/results/repeat-01-greedy/frames.jsonl.gz",
+  "source_sha256": "e337cef91d7d8726d2e8a7ced05a5eb1fb2a2cdafd238ffd696301f21e20e875",
+  "pairs": [
+    {
+      "before": {
+        "kittie_x": 3950,
+        "kittie_y": 2051,
+        "kittie_ground": 0,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 1,
+        "courtyard_defeated": 0,
+        "boss_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "after": {
+        "kittie_x": 3924,
+        "kittie_y": 2051,
+        "kittie_ground": 0,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 1,
+        "courtyard_defeated": 1,
+        "boss_health": 2,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "reward": {
+        "time": -0.0016742706298828126,
+        "boss_hits": 10.0,
+        "damage": -0.0
+      },
+      "events": [
+        {
+          "kind": "boss_hit",
+          "throw_id": 2,
+          "bounces": 1,
+          "reward": 10.0
+        }
+      ]
+    },
+    {
+      "before": {
+        "kittie_x": 2806,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 1,
+        "courtyard_defeated": 1,
+        "boss_health": 2,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "after": {
+        "kittie_x": 2806,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 1,
+        "courtyard_defeated": 2,
+        "boss_health": 1,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "reward": {
+        "time": -0.0016742706298828126,
+        "boss_hits": 5.0,
+        "damage": -0.0
+      },
+      "events": [
+        {
+          "kind": "boss_hit",
+          "throw_id": 3,
+          "bounces": 2,
+          "reward": 5.0
+        }
+      ]
+    },
+    {
+      "before": {
+        "kittie_x": 5002,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 1,
+        "courtyard_defeated": 2,
+        "boss_health": 1,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "after": {
+        "kittie_x": 5002,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 3,
+        "courtyard_defeated": 3,
+        "boss_health": 0,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "reward": {
+        "time": -0.0016742706298828126,
+        "boss_hits": 5.0,
+        "goons": 2.0,
+        "damage": -0.0
+      },
+      "events": [
+        {
+          "kind": "boss_hit",
+          "throw_id": 4,
+          "bounces": 2,
+          "reward": 5.0
+        }
+      ]
+    },
+    {
+      "before": {
+        "kittie_x": 7056,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 3,
+        "courtyard_defeated": 3,
+        "boss_health": 0,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "native_score": 0
+      },
+      "after": {
+        "kittie_x": 7056,
+        "kittie_y": 2048,
+        "kittie_ground": 1,
+        "kittie_health": 3,
+        "kittie_inventory": 0,
+        "kittie_gate": 3,
+        "courtyard_defeated": 3,
+        "boss_health": 0,
+        "kittie_dead": 0,
+        "kittie_won": 1,
+        "native_score": 300
+      },
+      "reward": {
+        "time": -0.0016742706298828126,
+        "boss_hits": 0.0,
+        "damage": -0.0,
+        "completion": 100.0,
+        "completion_hearts": 6.0,
+        "completion_balls": 0.0
+      },
+      "events": []
+    }
+  ]
+}

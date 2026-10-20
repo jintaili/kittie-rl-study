@@ -12,3 +12,7 @@ runs/
 *.safetensors
 *.pt
 *.mp4
+
+# Generated browsing copies and local agent instructions
+paper/reference/
+AGENTS.md

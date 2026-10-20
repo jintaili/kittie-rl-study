@@ -1,0 +1,59 @@
+{
+  "code_extractions_verified": 13,
+  "original_definitions_unchanged": 27,
+  "latency_and_lineage_sources_verified": 162,
+  "historical_result_sources_verified": 12,
+  "export_files_verified": 50,
+  "pages_checked": 9,
+  "local_links_and_fragments_checked": 764,
+  "analysis_matches_preparation_baseline": true,
+  "private_urls_in_export": 0,
+  "selected_replay_hash_matches": true,
+  "isolated_regeneration_byte_matches": [
+    "index.html",
+    "supplement.html",
+    "methods.html",
+    "reproduction.html",
+    "data/analysis.json",
+    "data/latency-summary.json",
+    "performance.png",
+    "performance.svg",
+    "latency-distributions.png",
+    "latency-distributions.svg"
+  ],
+  "tests_passed": 15,
+  "export_idempotent": true,
+  "browser_review": {
+    "browser": "Google Chrome via Playwright",
+    "viewports": [
+      [
+        1280,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "pages": [
+      "training/",
+      "training/methods.html",
+      "training/supplement.html",
+      "index.html"
+    ],
+    "console_errors": 0,
+    "http_errors": 0,
+    "page_overflow": false,
+    "broken_images": false,
+    "selected_video_duration_seconds": 14.281528,
+    "screenshots_visually_inspected": true
+  },
+  "scope": {
+    "article_source": "paper/code/paper.py",
+    "guide_source": "paper/code/guide.py",
+    "exporter": "scripts/export_site.py",
+    "target": "kittie-game/docs/training/",
+    "remote_publication_performed": false,
+    "research_repo_visibility_changed": false
+  }
+}
