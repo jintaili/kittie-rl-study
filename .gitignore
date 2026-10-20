@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.DS_Store
+.env
+.env.*
+!.env.example
+checkpoints/
+artifacts/
+runs/
+*.safetensors
+*.pt
+*.mp4

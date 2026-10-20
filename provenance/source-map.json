@@ -1,0 +1,72 @@
+[
+  {
+    "source": "bc_main/distribution.py",
+    "source_sha256": "b40793f8da08d766e8fb925890ed8a15ad6382a48fddf8dc064453a6b9d349ff",
+    "destination": "src/head_goon_study/actions.py",
+    "symbols": [
+      "log_probabilities"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "dcac731bf3d5d772b9fc960a6431497143f0d49c3d790278d03a1b409b40ce8c"
+  },
+  {
+    "source": "ppo_multi/core.py",
+    "source_sha256": "47e6efc7c23dd3faaea258264280cdaa2bbc8e8c6514c9bc108239b480ab6280",
+    "destination": "src/head_goon_study/advantages.py",
+    "symbols": [
+      "gae",
+      "weights",
+      "normalize_advantages"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "93d909230e1ae12905e72981aecf5a8e44497154f91fadece794b04b757b03b4"
+  },
+  {
+    "source": "head_goon_ppo/critic.py",
+    "source_sha256": "ef0da42a09ee83cd40c38c8c359e462cb43f0f56dc37861f13d08b79a05d4179",
+    "destination": "src/head_goon_study/critic.py",
+    "symbols": [
+      "Standardize",
+      "make_critic"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "dba4be59356485c88c2f8575aceba418466d11b7d0b3b63d87db0e4a10a71468"
+  },
+  {
+    "source": "ppo_multi/batching.py",
+    "source_sha256": "ea656fbcfaf7197a37bddb599a675ed209be15087eb6021d6ceb21b4856907ab",
+    "destination": "src/head_goon_study/scoring.py",
+    "symbols": [
+      "score_actor"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "fcbb75961d9ec38aa4866731deb034fa572047c7295b2f9c3a4a69f32a6ce37d"
+  },
+  {
+    "source": "head_goon_ppo/optimize.py",
+    "source_sha256": "059b3082198cb3045206cce4020447d1afcc2bde109700c72db7e338d4540666",
+    "destination": "src/head_goon_study/ppo.py",
+    "change": "Only import path changed; update, loss, audit and critic-fitting definitions retained.",
+    "destination_sha256": "8da39e51533c6d2a38651ce0e7d2fa9de3a1882ab8b37f0ca7529eadf3428389"
+  },
+  {
+    "source": "bc_multi/data.py",
+    "source_sha256": "c4ea44d90abb2a98dc54ea00e5f8ce7f9688ca74cc499f013c6c581405908827",
+    "destination": "src/head_goon_study/bc_data.py",
+    "symbols": [
+      "weighted_rows",
+      "batch_order"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "d0450c47a73541d2b3003f1f58fbcd5c91c42c914d0cc487eec4bdc2f36e1146"
+  },
+  {
+    "destination": "src/head_goon_study/bc.py",
+    "sources": {
+      "bc_main/train.py": "8d770b60e77627cf5ba0b3041b45c1847e1d79fdeaf76be1bd6e4d12cc8a870c",
+      "bc_multi/train_v2.py": "1b85e1e937001832aec5168af40a5f098b9fe963452b2beea26a7b392d044f77"
+    },
+    "change": "Common weighted epoch extracted into a model-independent function. Device inferred from parameters; explicit stage-specific denominator; split check added. Logging/checkpoint/gameplay orchestration excluded.",
+    "destination_sha256": "07690c385643642a865a319c5cbd5b3e276b486d7f665cae7382bf057f4f4a07"
+  }
+]

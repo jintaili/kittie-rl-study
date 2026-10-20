@@ -1,0 +1,20 @@
+{
+  "checked_epoch": 1792454073.65655,
+  "local_links": {
+    "index.html": 21,
+    "supplement.html": 23,
+    "reproduction.html": 17
+  },
+  "pages_http_200": 3,
+  "analysis_tests": 5,
+  "unique_games": 510,
+  "game_source_hashes_verified": 11,
+  "latency_source_hashes_verified": 153,
+  "lineage_source_hashes_verified": 9,
+  "figure_visual_review": true,
+  "desktop_paper_visual_review": true,
+  "new_paid_inference_for_paper": false,
+  "extracted_package_regenerated_statistics_and_pages": true,
+  "extracted_package_regenerated_figures": true,
+  "supplement_visual_review": true
+}

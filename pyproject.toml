@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "head-goon-study"
+version = "0.1.0"
+description = "BC and PPO training components for the Head Goon real-time gameplay study"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+training-core = ["torch==2.11.0", "numpy==2.5.3"]
+figures = ["matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

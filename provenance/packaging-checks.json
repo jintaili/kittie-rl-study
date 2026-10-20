@@ -1,0 +1,10 @@
+{
+  "training_core_cpu_tests": 5,
+  "analysis_tests": 5,
+  "extracted_function_bodies_match_sources": true,
+  "source_hashes_verified": true,
+  "policy_models_loaded": false,
+  "new_gameplay_or_paid_inference": false,
+  "end_to_end_training_validated": false,
+  "native_integration_complete": false
+}

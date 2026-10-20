@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Training reproduction status</title><style>body{max-width:850px;margin:40px auto;padding:0 20px;font:18px/1.6 Georgia,serif}table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui}td,th{padding:10px;border-bottom:1px solid #ccc;text-align:left}code{font-size:.85em}</style>
+<h1>Training reproduction</h1>
+<p>The intended execution path is pretrained Qwen → behavior cloning → Head Goon PPO. This repository starts with the training update code; standalone training and evaluation integration is in progress.</p>
+<table><tr><th>Component</th><th>Current state</th></tr>
+<tr><td>BC objective and epoch</td><td>Implemented in <code>head_goon_study.bc</code>. Retains the distinct short-batch normalization of each supervised stage. Caller supplies a loaded actor, weighted tokenized rows and optimizer.</td></tr>
+<tr><td>PPO update</td><td>Original update, KL audit and critic-fitting functions retained in <code>head_goon_study.ppo</code>. Requires the policy interface, fresh completed rollouts and checkpoint writer.</td></tr>
+<tr><td>Action readout, scoring, GAE</td><td>Extracted with original function bodies. Synthetic CPU tests cover conditional actions, accumulation, clipping, frame discounting and terminal-unapplied weighting.</td></tr>
+<tr><td>Data and checkpoints</td><td>Hashes and identifiers documented in <a href="../paper/study.json">study.json</a>. Downloadable training assets remain to be packaged.</td></tr>
+<tr><td>Model and native game integration</td><td>Pending: pinned text-weight loader, tokenizer contract, native rollout collector and GPU environment.</td></tr>
+<tr><td>Training orchestration</td><td>Pending: validation, sequential checkpoint and optimizer/RNG restoration, critic initialization, full BC and 16-iteration PPO entry points.</td></tr>
+</table>
+<p>CPU tests validate numerical components only. They do not establish end-to-end equivalence to the historical GPU jobs. New training should reproduce the method; exact weights and real-time trajectories are not guaranteed.</p>
+<p>The main narrative treats the supervised stages as one BC phase. For full initialization details see <a href="../paper/supplement.html#bc">Appendix A</a>. The tiny statistical analysis package stays alongside the paper to make its reported uncertainty and significance tests inspectable.</p>
+</html>
