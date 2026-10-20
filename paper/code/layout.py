@@ -20,7 +20,7 @@ def page(title: str, body: str) -> str:
                 f'<meta property="og:url" content="{SITE}training/{route}">'
                 f'<meta property="og:image" content="{SITE}training/images/game-frame.png">'
                 '<meta property="og:image:alt" content="Kittie facing Head Goon in the Game Boy game">')
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{metadata}<title>{html.escape(title)} · Kittie Has Other Plans</title><link rel="stylesheet" href="assets/site.css"></head><body><main class="article"><header><a href="{SITE}">Kittie Has Other Plans</a><nav class="site-nav" aria-label="Main navigation">{nav}</nav></header>{body}<footer><span>Jintai Li · 2026</span><span><a href="methods.html">Methods and code</a> · <a href="methods.html#licenses">Licenses</a></span></footer></main></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{metadata}<title>{html.escape(title)} · Kittie Has Other Plans</title><link rel="stylesheet" href="assets/site.css"></head><body><main class="article"><header><a href="{SITE}">Kittie Has Other Plans</a><nav class="site-nav" aria-label="Main navigation">{nav}</nav></header>{body}<footer><span>Jintai Li · 2026</span><span><a href="methods.html">Methods and code</a></span></footer></main></body></html>'''
 
 def materialize_reference() -> None:
     """Generated for browsing/export; editable implementations stay under src/."""
