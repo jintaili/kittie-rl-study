@@ -35,6 +35,15 @@
       "sha256": "f428dc68c70b7b93154a331471211dc821d30a869669681cef08a8e287ceca9d",
       "training_state_sha256": "952238967c512f8f9c9d57353bfb7156de5864b6cd359f7f16242df69ac4b628",
       "optimizer_step": 270
+    },
+    "Vanilla Qwen": {
+      "model": "Qwen/Qwen3.5-0.8B",
+      "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+      "sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+      "weight_file": "model.safetensors-00001-of-00001.safetensors",
+      "adapter": null,
+      "optimizer_step": 0,
+      "evaluation": "50 original-encounter games; same observation and joint greedy readout; no prompt search"
     }
   },
   "checkpoint_selection": "Primary reported checkpoint chosen by the researcher using subsequent 50-game evaluations; exploratory comparisons, not an independently selected final test.",

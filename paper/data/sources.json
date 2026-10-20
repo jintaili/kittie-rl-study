@@ -1,4 +1,5 @@
 {
+  "training_runs/head-goon-qwen-base-001-execution/results/games.json": "0e0262c368493067f314c2f23a3cc5c8fe99da7e9360cdfe0fa7fbf095c100d4",
   "data/jev-head-goon-baseline-001/results.json": "eb42980a583c64b28fe5ad7174db99139dd81f4b6c2213694294cb5284cd9b6c",
   "training_runs/head-goon-bc04-greedy-001-execution/results/games.json": "97a4179ea8818ea0631b935f641d93702d442ada1f06967ed94ea25bddd3a619",
   "training_runs/head-goon-greedy-004010-001-execution/results/games.json": "5f803f332f49c0db58f98c023e59c90a9840538c13a8b7e3bdec0b9f7b7c3c75",

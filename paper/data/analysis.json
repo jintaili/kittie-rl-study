@@ -1,5 +1,19 @@
 {
   "cohorts": {
+    "main|Vanilla Qwen|6": {
+      "wins": 0,
+      "n": 50,
+      "rate": 0.0,
+      "wilson95": [
+        6.938893903907228e-18,
+        0.07134759913335872
+      ],
+      "mean_episode_median_latency_ms": 148.48827770998696,
+      "outcomes": {
+        "death": 2,
+        "wall_time_limit": 48
+      }
+    },
     "main|JEV|6": {
       "wins": 26,
       "n": 50,
@@ -189,6 +203,33 @@
         0.1621709168883818
       ],
       "fisher_two_sided_p": 0.24242424242424243,
+      "paired": false
+    },
+    "main:BC04-Vanilla Qwen": {
+      "difference": 0.78,
+      "newcombe95": [
+        0.6295860929522328,
+        0.8724608402978559
+      ],
+      "fisher_two_sided_p": 8.28800834698326e-18,
+      "paired": false
+    },
+    "main:PPO15-Vanilla Qwen": {
+      "difference": 0.94,
+      "newcombe95": [
+        0.8153830823687768,
+        0.979385029651026
+      ],
+      "fisher_two_sided_p": 4.64380767359492e-25,
+      "paired": false
+    },
+    "main:JEV-Vanilla Qwen": {
+      "difference": 0.52,
+      "newcombe95": [
+        0.3674097562318671,
+        0.6520286471342196
+      ],
+      "fisher_two_sided_p": 3.474929547757128e-10,
       "paired": false
     },
     "randomized:PPO15-BC04": {
