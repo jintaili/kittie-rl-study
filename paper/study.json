@@ -1,5 +1,5 @@
 {
-  "status": "draft; offline reproduction implemented, training/evaluation package consolidation pending",
+  "status": "private repository created; training update components extracted and CPU-tested; end-to-end model/assets/native integration pending",
   "model": "Qwen/Qwen3.5-0.8B",
   "revision": "2fc06364715b967f1860aea9cf38778875588b17",
   "headline_checkpoint": "PPO15",
@@ -54,5 +54,6 @@
       "optimizer_updates": 556
     }
   ],
-  "latency_evidence": "data/latencies.json"
+  "latency_evidence": "data/latencies.json",
+  "repository": "https://github.com/jintaili/kittie-rl-study"
 }

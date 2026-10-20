@@ -30,5 +30,6 @@
   "bounce_multiplier": 0.5,
   "iterations": 16,
   "inference_batch_size": 1,
-  "gradient_microbatch": 1
+  "gradient_microbatch": 1,
+  "seed": 101620261
 }
