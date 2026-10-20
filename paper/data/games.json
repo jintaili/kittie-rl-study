@@ -1,7 +1,7 @@
 [
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-01-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -27,7 +27,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-02-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -53,7 +53,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-03-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -79,7 +79,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-04-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -105,7 +105,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-05-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -131,7 +131,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-06-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -157,7 +157,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-07-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -183,7 +183,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-08-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -209,7 +209,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-09-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -235,7 +235,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-10-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -261,7 +261,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-11-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -287,7 +287,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-12-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -313,7 +313,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-13-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -339,7 +339,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-14-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -365,7 +365,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-15-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -391,7 +391,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-16-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -417,7 +417,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-17-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -443,7 +443,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-18-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -469,7 +469,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-19-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -495,7 +495,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-20-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -521,7 +521,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-21-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -547,7 +547,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-22-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -573,7 +573,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-23-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -599,7 +599,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-24-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -625,7 +625,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-25-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -651,7 +651,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-26-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -677,7 +677,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-27-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -703,7 +703,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-28-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -729,7 +729,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-29-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -755,7 +755,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-30-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -781,7 +781,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-31-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -807,7 +807,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-32-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -833,7 +833,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-33-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -859,7 +859,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-34-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -885,7 +885,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-35-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -911,7 +911,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-36-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -937,7 +937,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-37-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -963,7 +963,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-38-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -989,7 +989,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-39-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1015,7 +1015,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-40-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1041,7 +1041,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-41-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1067,7 +1067,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-42-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1093,7 +1093,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-43-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1119,7 +1119,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-44-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1145,7 +1145,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-45-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1171,7 +1171,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-46-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1197,7 +1197,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-47-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1223,7 +1223,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-48-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1249,7 +1249,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-49-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",
@@ -1275,7 +1275,7 @@
   },
   {
     "environment": "main",
-    "model": "Vanilla Qwen",
+    "model": "Pretrained Qwen",
     "post_action_frames": 6,
     "game_id": "head-goon-qwen-base-001/repeat-50-vanilla-qwen",
     "source": "training_runs/head-goon-qwen-base-001-execution/results/games.json",

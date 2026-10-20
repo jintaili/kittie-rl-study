@@ -54,8 +54,8 @@ def main():
   w=sum(r['win'] for r in rs);n=len(rs)
   out['cohorts'][key]={'wins':w,'n':n,'rate':w/n,'wilson95':wilson(w,n),'mean_episode_median_latency_ms':statistics.mean(r['delay_median_ms'] for r in rs),'outcomes':{v:sum(r['outcome']==v for r in rs) for v in sorted({r['outcome'] for r in rs})}}
  original_comparisons=[('PPO15','BC04'),('PPO15','JEV'),('PPO10','BC04'),('PPO10','PPO15')]
- if 'main|Vanilla Qwen|6' in out['cohorts']:
-  original_comparisons += [(m,'Vanilla Qwen') for m in ['BC04','PPO15','JEV']]
+ if 'main|Pretrained Qwen|6' in out['cohorts']:
+  original_comparisons += [(m,'Pretrained Qwen') for m in ['BC04','PPO15','JEV']]
  for first,second in original_comparisons:
   a,b=[out['cohorts'][f'main|{m}|6'] for m in [first,second]]
   out['comparisons'][f'main:{first}-{second}']={'difference':a['rate']-b['rate'],'newcombe95':newcombe(a['wins'],a['n'],b['wins'],b['n']),'fisher_two_sided_p':fisher(a['wins'],a['n'],b['wins'],b['n']),'paired':False}

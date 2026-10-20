@@ -9,7 +9,7 @@ analysis=json.loads((HOME/'data/analysis.json').read_text())
 plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False})
 fig,axes=plt.subplots(1,2,figsize=(10,4.4),sharey=True)
 for ax,env,title in zip(axes,['main','randomized'],['Original fixed entry','Randomized scenarios']):
- models=['Vanilla Qwen','JEV','BC04','PPO15'] if env=='main' and 'main|Vanilla Qwen|6' in analysis['cohorts'] else ['JEV','BC04','PPO15']
+ models=['Pretrained Qwen','JEV','BC04','PPO15'] if env=='main' and 'main|Pretrained Qwen|6' in analysis['cohorts'] else ['JEV','BC04','PPO15']
  for x,model in enumerate(models):
   key=f'{env}|{model}|6'
   if key not in analysis['cohorts']:
@@ -18,5 +18,5 @@ for ax,env,title in zip(axes,['main','randomized'],['Original fixed entry','Rand
   color='#17678a' if model=='PPO15' else '#596773'
   ax.errorbar(x,rate,yerr=[[max(0,rate-lo)],[max(0,hi-rate)]],fmt='o',capsize=5,color=color)
   ax.annotate(f"{m['wins']}/{m['n']}",(x,hi),xytext=(0,8),textcoords='offset points',ha='center',fontsize=9)
- ax.set(xticks=range(len(models)),xticklabels=[m.replace('Vanilla Qwen','Vanilla\nQwen') for m in models],ylim=(0,1.13),title=title,ylabel='Win fraction',xlim=(-.5,len(models)-.5));ax.grid(axis='y',alpha=.15)
+ ax.set(xticks=range(len(models)),xticklabels=[m.replace('Pretrained Qwen','Pretrained\nQwen') for m in models],ylim=(0,1.13),title=title,ylabel='Win fraction',xlim=(-.5,len(models)-.5));ax.grid(axis='y',alpha=.15)
 fig.tight_layout();fig.savefig(HOME/'performance.png',dpi=180);fig.savefig(HOME/'performance.svg');plt.close(fig)

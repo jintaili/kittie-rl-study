@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[3]
 DEST=Path(__file__).resolve().parents[1]/'data'
 SOURCES=[
- ('main','Vanilla Qwen',6,'training_runs/head-goon-qwen-base-001-execution/results/games.json',{}),
+ ('main','Pretrained Qwen',6,'training_runs/head-goon-qwen-base-001-execution/results/games.json',{}),
  ('main','JEV',6,'data/jev-head-goon-baseline-001/results.json',{}),
  ('main','BC04',6,'training_runs/head-goon-bc04-greedy-001-execution/results/games.json',{}),
  ('main','PPO10',6,'training_runs/head-goon-greedy-004010-001-execution/results/games.json',{'checkpoint':'iteration-10'}),
@@ -25,7 +25,7 @@ def main():
  review=json.loads((ROOT/'training_runs/head-goon-bc04-variation-001-execution/review.json').read_text())
  if review['status']!='complete_reviewed' or review['games']!=50:raise ValueError('BC04 randomized audit not complete')
  base_review=json.loads((ROOT/'training_runs/head-goon-qwen-base-001-execution/review.json').read_text())
- if base_review['status']!='complete_reviewed' or base_review['games']!=50:raise ValueError('Vanilla Qwen audit not complete')
+ if base_review['status']!='complete_reviewed' or base_review['games']!=50:raise ValueError('Pretrained Qwen audit not complete')
  DEST.mkdir(exist_ok=True);rows=[];sources={};seen=set()
  for environment,model,interval,name,filters in SOURCES:
   p=ROOT/name;data=p.read_bytes();sources[name]=hashlib.sha256(data).hexdigest()

@@ -1,6 +1,6 @@
 {
   "cohorts": {
-    "main|Vanilla Qwen|6": {
+    "main|Pretrained Qwen|6": {
       "wins": 0,
       "n": 50,
       "rate": 0.0,
@@ -205,7 +205,7 @@
       "fisher_two_sided_p": 0.24242424242424243,
       "paired": false
     },
-    "main:BC04-Vanilla Qwen": {
+    "main:BC04-Pretrained Qwen": {
       "difference": 0.78,
       "newcombe95": [
         0.6295860929522328,
@@ -214,7 +214,7 @@
       "fisher_two_sided_p": 8.28800834698326e-18,
       "paired": false
     },
-    "main:PPO15-Vanilla Qwen": {
+    "main:PPO15-Pretrained Qwen": {
       "difference": 0.94,
       "newcombe95": [
         0.8153830823687768,
@@ -223,7 +223,7 @@
       "fisher_two_sided_p": 4.64380767359492e-25,
       "paired": false
     },
-    "main:JEV-Vanilla Qwen": {
+    "main:JEV-Pretrained Qwen": {
       "difference": 0.52,
       "newcombe95": [
         0.3674097562318671,
