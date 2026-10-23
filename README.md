@@ -4,10 +4,16 @@ Reference implementation and analysis companion for Jintai Li's Head Goon study 
 *Kittie Has Other Plans*. Pretrained Qwen3.5-0.8B learns from JEV demonstrations
 through behavior cloning, then trains on its own episodes with PPO.
 
+<a href="https://jintaili.github.io/kittie-game/training/">
+  <img src="paper/images/game-frame.png" width="480" alt="Head Goon gameplay. Open the article to watch the replay.">
+</a>
+
 The original encounter results are 0/50 for pretrained Qwen, 39/50 for BC04 and
 47/50 for PPO15. The [article](https://jintaili.github.io/kittie-game/training/) and [supplement](https://jintaili.github.io/kittie-game/training/supplement.html)
 retain the randomized results and the limits of one training lineage, retrospective
 checkpoint selection and differing serving conditions.
+
+![Win fractions for the original encounter and randomized scenarios](paper/performance.png)
 
 ## Read the implementation
 
